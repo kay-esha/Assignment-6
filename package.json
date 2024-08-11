@@ -1,12 +1,7 @@
 {
   "name": "assignment-6",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
-  "scripts": {
-    "postinstall": "npm install pg",
-    "start": "node server.js"
-  },
   "dependencies": {
     "express": "^4.19.2",
     "express-handlebars": "^7.1.3",
@@ -14,8 +9,13 @@
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.37.3"
   },
+  "scripts": {
+    "postinstall": "npm install pg",
+    "start": "node server.js"
+  },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "description": ""
 }
 
