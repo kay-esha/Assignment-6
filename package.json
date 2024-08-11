@@ -1,6 +1,7 @@
 {
   "name": "assignment-6",
   "version": "1.0.0",
+  "description": "Assignment 6 project",
   "main": "server.js",
   "dependencies": {
     "dotenv": "^16.4.5",
@@ -11,11 +12,9 @@
     "sequelize": "^6.37.3"
   },
   "scripts": {
-    "postinstall": "npm install pg",
     "start": "node server.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "author": "Esha Kader",
+  "license": "ISC"
 }
