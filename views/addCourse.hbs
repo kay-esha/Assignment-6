@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Course</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/theme.css" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <h2>Add New Course</h2>
+        <form action="/courses/add" method="POST">
+            <div class="form-group">
+                <label for="courseCode">Course Code</label>
+                <input type="text" class="form-control" id="courseCode" name="courseCode" required>
+            </div>
+            <div class="form-group">
+                <label for="courseDescription">Course Description</label>
+                <input type="text" class="form-control" id="courseDescription" name="courseDescription" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Course</button>
+        </form>
+    </div>
+</body>
+</html>

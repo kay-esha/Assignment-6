@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Students</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/theme.css" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <br>
+        <h2>Students</h2>
+        <a href="/students/add" class="btn btn-success float-end">Add New Student</a>
+        <hr />
+
+        {{#if students}}
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Student Number</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>Course</th>
+                        <th>Status</th>
+                        <th></th> <!-- Empty header for remove button column -->
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each students}}
+                        <tr>
+                            <td>{{studentNum}}</td>
+                            <td>{{firstName}}</td>
+                            <td>{{lastName}}</td>
+                            <td>{{email}}</td>
+                            <td>{{course}}</td>
+                            <td>{{status}}</td>
+                            <td><a href="/student/delete/{{studentNum}}" class="btn btn-danger">Remove</a></td>
+                        </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+        {{else}}
+            <div class="col-md-12 text-center">
+                <strong>{{message}}</strong>
+            </div>
+        {{/if}}
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
