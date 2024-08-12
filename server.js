@@ -1,3 +1,16 @@
+/******************************************************************************** *  WEB700 – Assignment 06 
+*  
+*	I declare that this assignment is my own work in accordance with Seneca's *  Academic Integrity Policy: 
+*  
+*	https://www.senecacollege.ca/about/policies/academic-integrity-policy.html 
+*  
+*	Name: Esha Kader Student ID: 143814234 Date: August 11, 2024 
+* 
+*	Published URL: https://assignment-6-bh3rb95cy-esha-kaders-projects.vercel.app
+* 
+********************************************************************************/ 
+
+
 const express = require("express");
 const path = require("path");
 const dotenv = require("dotenv");
